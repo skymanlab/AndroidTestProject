@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_project"
+    app:startDestination="@id/navGraphHomeFragment">
+
+    <fragment
+        android:id="@+id/navGraphHomeFragment"
+        android:name="com.skymanlab.navexam.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navGraphTrainingFragment"
+        android:name="com.skymanlab.navexam.Fragment.training.TrainingFragment"
+        android:label="fragment_training"
+        tools:layout="@layout/fragment_training">
+        <action
+            android:id="@+id/action_navGraphMoreInfoFragment_to_navigationProgram"
+            app:destination="@id/navigationProgram" />
+        <action
+            android:id="@+id/action_navGraphMoreInfoFragment_to_navigationList"
+            app:destination="@id/navigationList" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navGraphMoreInfoFragment"
+        android:name="com.skymanlab.navexam.Fragment.MoreInfoFragment"
+        android:label="fragment_more_info"
+        tools:layout="@layout/fragment_more_info" />
+    <include app:graph="@navigation/navigation_list" />
+    <include app:graph="@navigation/navigation_program" />
+</navigation>

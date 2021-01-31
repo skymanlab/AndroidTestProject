@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">NavExam</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Menu-->
+    <string name="Menu_bottom_navigation_menu_title_home">홈</string>
+    <string name="Menu_bottom_navigation_menu_title_training">트레이닝</string>
+    <string name="Menu_bottom_navigation_menu_title_more_info">더보기</string>
+
+    <!-- Activity : main -->
+    <string name="A_main_Alert_finish_title">종료하시겠습니까?</string>
+    <string name="A_main_Alert_finish_message">어플을 종료합니다.</string>
+    <string name="A_main_Alert_finish_Btn_positive">종료</string>
+    <string name="A_main_Alert_finish_Btn_negative">취소</string>
+
+    <!-- Fragment : home -->
+    <string name="F_home_title">홈</string>
+
+    <!-- Fragment : training -->
+    <string name="F_training_title">트레이닝</string>
+    <string name="F_training_Btn_program">프로그램 이동</string>
+    <string name="F_training_Btn_list">목록 이동</string>
+
+    <!-- Fragment : more info -->
+    <string name="F_more_info_title">더보기</string>
+
+    <!-- Fragment : training/program -->
+    <string name="F_program_title">프로그램</string>
+
+    <!-- Fragment : training/list -->
+    <string name="F_list_title">목록</string>
+
+</resources>

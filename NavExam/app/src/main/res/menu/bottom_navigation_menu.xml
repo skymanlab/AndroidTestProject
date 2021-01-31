@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/Menu_bottom_navigation_menu_title_home"
+        android:id="@+id/navGraphHomeFragment"
+        android:icon="@drawable/bottom_navigation_menu_icon_home"/>
+    <item
+        android:title="@string/Menu_bottom_navigation_menu_title_training"
+        android:id="@+id/navGraphTrainingFragment"
+        android:icon="@drawable/bottom_navigation_menu_icon_training"/>
+    <item
+        android:title="@string/Menu_bottom_navigation_menu_title_more_info"
+        android:id="@+id/navGraphMoreInfoFragment"
+        android:icon="@drawable/bottom_navigation_menu_icon_more_info"/>
+</menu>
