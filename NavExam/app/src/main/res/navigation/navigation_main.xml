@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/navGraphTrainingFragment"
-        android:name="com.skymanlab.navexam.Fragment.training.TrainingFragment"
+        android:name="com.skymanlab.navexam.Fragment.TrainingFragment"
         android:label="fragment_training"
         tools:layout="@layout/fragment_training">
         <action
@@ -29,6 +29,9 @@
         android:name="com.skymanlab.navexam.Fragment.MoreInfoFragment"
         android:label="fragment_more_info"
         tools:layout="@layout/fragment_more_info" />
+
     <include app:graph="@navigation/navigation_list" />
+
     <include app:graph="@navigation/navigation_program" />
+
 </navigation>

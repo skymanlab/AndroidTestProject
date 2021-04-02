@@ -1,14 +1,11 @@
-package com.skymanlab.navexam.Fragment.training;
+package com.skymanlab.navexam.Fragment;
 
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-import androidx.navigation.fragment.NavHostFragment;
-import androidx.navigation.ui.NavigationUI;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -85,6 +82,8 @@ public class TrainingFragment extends Fragment {
         });
 
         Button list = (Button) view.findViewById(R.id.F_training_Btn_list);
-        list.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_navGraphMoreInfoFragment_to_navigationList));
+        list.setOnClickListener(
+                Navigation.createNavigateOnClickListener(R.id.action_navGraphMoreInfoFragment_to_navigationList)
+        );
     }
 }

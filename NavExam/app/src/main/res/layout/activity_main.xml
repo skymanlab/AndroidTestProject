@@ -18,13 +18,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             app:defaultNavHost="true"
-            app:navGraph="@navigation/navigation_project" />
+            app:navGraph="@navigation/navigation_main" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/A_main_bottom_navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:menu="@menu/bottom_navigation_menu" />
-
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

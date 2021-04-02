@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.A_main_nav_host_fragment);
+
         bottomNavigationView = findViewById(R.id.A_main_bottom_navigation);
 
         navController = navHostFragment.getNavController();
