@@ -52,14 +52,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
 
-        NavBackStackEntry navBackStackEntry = navController.getCurrentBackStackEntry();
+        // 현재 화면 가져오기
         NavDestination navDestination = navController.getCurrentDestination();
 
-        Log.d(TAG, "< NavBackStackEntry > 객체는 ? = " + navBackStackEntry);
-        Log.d(TAG, "< NavDestination > 객체는 ? = " + navDestination);
-        Log.d(TAG, "< navDestination > getId 결과는 ? = " + navDestination.getId());
-
-
+        // 현재 화면이 home 화면이면 종료 alert dialog 표시
         if (navDestination.getId() == R.id.navGraphHomeFragment) {
 
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -79,9 +75,10 @@ public class MainActivity extends AppCompatActivity {
                     })
                     .show();
         } else {
+
             navController.popBackStack();
         }
 
-
     }
+
 }
