@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">맵 플랫폼 테스트 앱</string>
+
+    <string name="btn_place_autocomplete_activity_move">장소 자동 완성</string>
+    <string name="btn_place_autocomplete_option2">방법2</string>
+
+</resources>
